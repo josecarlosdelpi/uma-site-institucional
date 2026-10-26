@@ -1,0 +1,69 @@
+name: Importar imagens oficiais do site UMA
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/importar-imagens-uma.yml
+
+permissions:
+  contents: write
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar logo e imagens do site atual
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          BASE='https://assets.zyrosite.com/Sc6JoBuPKIKZvy0y'
+          mkdir -p assets/img/oficiais
+          falhas=0
+          while IFS='|' read -r nome fonte; do
+            [[ -z "$nome" ]] && continue
+            destino="assets/img/oficiais/$nome"
+            echo "Transferindo $nome"
+            if curl --fail --silent --show-error --location --retry 2 --connect-timeout 15 --max-time 90 "$BASE/$fonte" --output "$destino" && [[ -s "$destino" ]]; then
+              tipo="$(file --mime-type --brief "$destino")"
+              case "$tipo" in
+                image/*) echo "OK: $nome ($tipo, $(stat -c%s "$destino") bytes)" ;;
+                *) echo "Arquivo inesperado: $nome ($tipo)"; rm -f "$destino"; falhas=$((falhas+1)) ;;
+              esac
+            else
+              echo "FALHA: $nome"
+              rm -f "$destino"
+              falhas=$((falhas+1))
+            fi
+          done <<'ASSETS'
+          logo-uma.png|uma_marca-d-aigua_branca-e-amarela-AQ10xPxjVOj6i28G.png
+          filtro-ar.png|filtro-de-ar-LRI2pJI1waprQ5Zv.png
+          respiro.jpg|respiro-fY1pw8QH4KikyNFy.jpg
+          tubo-agua.jpg|tubo-da-agua2-xxOW8gN1QB4s3knB.jpg
+          adaptadores.png|conector1-nhrOREsAmOXXQzp1.png
+          intercooler.jpg|intercooler-6-klGa177bnZtng2VI.jpg
+          ar-quente.jpg|ar-quente-3-iVC12PwseK8dk9CQ.JPG
+          radiador.jpg|radiador-3-ZGIRlJWR4F1XqeD2.jpg
+          abracadeiras.jpg|abraassadeira-radiador-estreita-EHs28JpUWULtrM7o.jpg
+          loja-joinville.webp|loja-jlle-4GZHe2OlaA2fdDkj.webp
+          loja-tubarao.webp|loja-tubarao-JnyhtszN8ydk2q7k.webp
+          ASSETS
+          echo "Falhas: $falhas"
+          if [[ ! -s assets/img/oficiais/logo-uma.png ]]; then
+            echo 'Nao foi possivel obter a logomarca oficial.'
+            exit 1
+          fi
+      - name: Versionar imagens no repositorio
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/img/oficiais
+          if git diff --cached --quiet; then
+            echo 'Nenhuma imagem nova.'
+          else
+            git commit -m 'assets: importar logomarca e fotos do site oficial UMA'
+            git push origin HEAD:main
+          fi
