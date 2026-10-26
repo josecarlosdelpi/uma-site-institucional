@@ -464,3 +464,105 @@ a:hover .text-link .icon,.text-link:hover .icon{transform:translateX(4px)}
   .hero-visual.hero-map{height:auto;margin-top:24px;padding:0 0 32px}
   .hero-visual.hero-map>img{width:100%;height:auto;max-width:none;transform:none;filter:drop-shadow(0 12px 20px rgba(0,0,0,.18))}
 }
+
+
+/* UMA 1.4 — equilibrio da abertura e avaliacoes Google sem API. */
+.hero-layout{
+  grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);
+  align-items:start;min-height:0;gap:40px;padding:70px 0 92px;
+}
+.hero-copy{padding:0}
+.hero-copy h1{
+  font-size:clamp(52px,5.1vw,71px);
+  line-height:1.045;letter-spacing:-.052em;
+  max-width:640px;margin:23px 0 20px;
+}
+.hero-visual.hero-map{align-self:start;min-height:0;margin-top:10px;padding:0}
+.hero-visual.hero-map>img{width:100%;max-width:100%;height:auto;object-fit:contain}
+.reviews-section{background:#f7f6f2}
+.reviews-section .section-head{margin-bottom:34px}
+.reviews-section .heading-text{max-width:780px}
+.google-reviews-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;
+}
+.google-review-card{
+  display:flex;flex-direction:column;gap:0;min-width:0;
+  padding:28px 27px 25px;background:white;
+  border:1px solid #e8e4d8;border-radius:20px;
+  box-shadow:0 11px 32px rgba(25,27,30,.035);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.google-review-card:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(25,27,30,.08)}
+.google-review-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.google-review-top h3{font-size:23px;margin:4px 0 0;line-height:1.18}
+.google-review-label{
+  display:block;color:#8a6d0a;text-transform:uppercase;letter-spacing:.10em;
+  font-size:10px;font-weight:850;
+}
+.google-review-source{
+  flex:none;padding:7px 9px;border:1px solid #ece8e0;border-radius:7px;
+  color:#62615c;font-size:11px;font-weight:750;white-space:nowrap;
+}
+.google-review-rating{display:flex;align-items:center;gap:15px;margin:24px 0 25px}
+.google-review-rating>strong{font-size:55px;font-weight:900;line-height:1;letter-spacing:-.07em}
+.google-review-rating-detail{display:flex;flex-direction:column;gap:4px}
+.google-review-stars{
+  display:inline-block;font-size:24px;letter-spacing:1.8px;
+  line-height:1.05;white-space:nowrap;
+  background:linear-gradient(to right,#f1c600 0%,#f1c600 var(--star-fill),#d8d9da var(--star-fill),#d8d9da 100%);
+  background-clip:text;-webkit-background-clip:text;color:transparent;
+}
+.google-review-count{font-size:12.5px;color:#65635e}
+.google-review-voice{
+  flex:1;background:#faf9f5;border-radius:12px;padding:19px 18px;
+  border:1px solid #f1efea;
+}
+.google-review-voice p{
+  color:#454443;font-size:14px;line-height:1.62;
+  margin:10px 0 0;min-height:68px;
+}
+.google-review-link{
+  display:inline-flex;align-items:center;justify-content:space-between;
+  gap:12px;margin-top:21px;min-height:42px;
+  color:#715900;font-size:13px;font-weight:850;
+  border-bottom:1px solid #e5dfc7;
+}
+.google-review-link:hover,.google-review-link:focus-visible{color:#3f3500;border-bottom-color:#d6b600}
+.google-review-link .icon{width:17px;height:17px}
+.google-reviews-footnote{
+  color:#68655d;font-size:12px;line-height:1.65;margin:20px 2px 0;
+}
+@media(max-width:1100px){
+  .hero-layout{gap:26px;padding:65px 0 90px}
+  .hero-copy h1{font-size:clamp(47px,5.55vw,65px)}
+}
+@media(max-width:950px){
+  .google-reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .google-review-card:last-child{grid-column:1/-1}
+  .google-review-voice p{min-height:0}
+}
+@media(max-width:920px){
+  .hero-layout{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:19px;padding:56px 0 84px;min-height:0}
+  .hero-copy{padding:0}
+  .hero-copy h1{font-size:clamp(43px,5.45vw,60px)}
+  .hero-visual.hero-map{margin-top:10px;padding:0}
+}
+@media(max-width:650px){
+  .hero-layout{display:flex;flex-direction:column;gap:24px;padding:54px 0 62px;min-height:0}
+  .hero-copy{padding:0}
+  .hero-copy h1{font-size:clamp(40px,10.2vw,56px);margin:18px 0 20px;line-height:1.06}
+  .hero-visual.hero-map{height:auto;width:100%;margin:0;padding:0}
+  .hero-visual.hero-map>img{width:100%;height:auto;max-width:none}
+  .google-reviews-grid{grid-template-columns:1fr;gap:14px}
+  .google-review-card:last-child{grid-column:auto}
+  .google-review-card{padding:23px 21px}
+  .google-review-rating{margin:19px 0 22px}
+  .google-review-rating>strong{font-size:51px}
+  .google-review-voice p{min-height:0}
+  .reviews-section .section-head{margin-bottom:23px}
+}
+@media(max-width:385px){
+  .hero-copy h1{font-size:40px}
+  .google-review-rating{gap:12px}
+  .google-review-stars{font-size:21px}
+}

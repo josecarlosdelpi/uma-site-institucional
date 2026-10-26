@@ -68,3 +68,13 @@ O workflow `.github/workflows/importar-imagens-uma.yml` foi utilizado para traze
 - Arquivo `assets/img/hero-santa-catarina-uma.webp` (WebP otimizado, sem dependências externas).
 - O banner mantém a identidade grafite/amarelo, sem duplicar a logomarca nem sobrepor avisos à imagem.
 - A versão anterior permanece no histórico do GitHub para eventual reversão.
+
+## Versão 1.4 — cabeçalho e avaliações públicas do Google
+
+- Texto da abertura reduzido e imagem de Santa Catarina alinhada ao topo; inclui ajustes próprios para celulares.
+- Nova seção `#avaliacoes` com **notas e quantidades conferidas em 26/10/2026**, sempre separadas por unidade.
+- Joinville: 4,8/5, 153 avaliações. Tubarão: 5,0/5, 65 avaliações. Itajaí: 5,0/5, 50 avaliações.
+- Cada cartão contém resumo editorial dos temas recorrentes e link para **o perfil da unidade no Google Maps**. Não são transcrições literais de avaliações individuais.
+- **Sem API, chaves, scripts externos ou assinatura:** as notas são instantâneos e devem ser revisadas manualmente ao atualizar o site. Não afirmar atualização em tempo real.
+- Manutenção: alterar textos, notas, quantidades e a data na seção `id="avaliacoes"` em `index.html`.
+- Links seguem a documentação Google Maps URLs usando `query_place_id` para identificar cada unidade.
