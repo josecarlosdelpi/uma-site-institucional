@@ -1,0 +1,66 @@
+UNIVERSO DAS MANGUEIRAS — SITE INSTITUCIONAL V1 (26/10/2026)
+=========================================================
+
+OBJETIVO
+Substituir, futuramente, o site institucional terceirizado por arquivos próprios
+que podem ser publicados na hospedagem Linux já contratada pela UMA na Locaweb.
+Esta V1 é um PROTÓTIPO FUNCIONAL. NÃO FOI PUBLICADA NO DOMÍNIO OFICIAL.
+
+O QUE ESTÁ INCLUÍDO
+- Início, Produtos, Sobre a UMA, Nossas Lojas, Contato e Privacidade
+- Nove páginas de linhas/categorias, usando URLs do site atual quando possível
+- Navegação responsiva para celular, desktop e tablet
+- Contato direto com WhatsApp das três unidades
+- Formulário que MONTA mensagem no WhatsApp (sem banco de dados ou envio automático)
+- Busca simples nas CATEGORIAS (não consulta estoque do ERP)
+- SEO básico: títulos, descrições, URL canônica, sitemap, robots, marcação de lojas
+- Ilustrações vetoriais locais; sem dependências de bibliotecas, fontes ou imagens externas
+
+COMO VISUALIZAR NO COMPUTADOR
+Abra index.html em seu navegador. Para validar caminhos e recursos mais próximos
+à hospedagem, extraia a pasta em um servidor HTTP local ou em um diretório de testes.
+No Python, dentro desta pasta, execute: python -m http.server 8000
+Depois abra http://localhost:8000 no navegador.
+
+COMO PUBLICAR NA LOCAWEB (SOMENTE APÓS APROVAÇÃO)
+1. Confirmar titularidade e acesso do FTP, sem alterar senha em produção sem avaliação.
+2. Fazer cópia integral da hospedagem e preservar a pasta portal-uma.
+3. Enviar cópia do site para /public_html/site-uma-teste/ (ou diretório separado
+   equivalente), mantendo o site atual e os registros DNS intactos.
+4. Testar pelo endereço temporário da hospedagem, acrescido de /site-uma-teste/.
+5. Validar links, WhatsApps, textos, fotos e dados de cada loja com responsáveis.
+6. Recuperar o logotipo oficial e fotografias dos produtos, verificando direitos de uso.
+7. Só depois avaliar migração dos apontamentos WWW e domínio sem WWW;
+   preservar MX, registros de e-mail e delegação DNS do subdomínio portal.
+8. Configurar e testar SSL, HTTPS, redirecionamentos e indexação no Google.
+9. Confirmar que o site atual foi substituído com sucesso ANTES de cancelar o terceiro.
+
+ATENÇÃO: A pasta /public_html/portal-uma/ é do projeto Portal UMA. NÃO ALTERAR.
+A mudança de DNS sem teste pode interromper site ou e-mail.
+
+ANTES DE PUBLICAR — VERIFICAR
+[ ] Logotipo oficial (o símbolo "UMA" nesta V1 é uma proposta provisória)
+[ ] Fotografias reais e autorização de reutilização das imagens do site atual
+[ ] Endereços, telefones, WhatsApps e horários das três unidades
+[ ] Texto "mais de 6 mil itens" (está publicado no site atual; validar atualização)
+[ ] Política de privacidade revisada com responsável da UMA
+[ ] Regras de redirecionamento de páginas antigas e conexão com Google Search Console
+[ ] SSL válido tanto para WWW quanto para o domínio sem WWW
+[ ] Backup e responsável interno por atualizações
+
+COMO ALTERAR CONTEÚDO
+- Textos de páginas e links estão dentro de arquivos index.html de cada pasta
+- Aparência: assets/css/site.css
+- Telefone do WhatsApp da ferramenta de orçamento: assets/js/site.js
+- Ícones e imagens: assets/img/*.svg
+ATENÇÃO: se trocar WhatsApps, atualize também os links dos arquivos HTML.
+
+CUSTOS DESTA VERSÃO
+Não exige CMS, mensalidade de plugin, banco de dados ou serviço de e-mail.
+Exige apenas hospedagem de arquivos estáticos; a conta Linux da Locaweb parece
+compatível, sujeito a teste de publicação e ajustes de DNS/SSL.
+
+PENDÊNCIAS NÃO IMPLEMENTADAS
+- Integração com ERP, estoque, login, portal interno e pagamento online
+- Fotos reais dos produtos, marcas de fabricantes e logotipo oficial
+- Analytics, gestão de anúncios ou painel administrativo

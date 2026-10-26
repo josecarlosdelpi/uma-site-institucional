@@ -1,0 +1,15 @@
+# Dados privados e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+node_modules/
+.vscode/
+.idea/
