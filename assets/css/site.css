@@ -1,5 +1,5 @@
 /* UMA - site institucional estatico | Sem frameworks ou servicos externos */
-:root{--ink:#13232c;--ink-deep:#0d1820;--ink-soft:#233841;--red:#e92d3e;--red-dark:#d51b2f;--paper:#f5f6f4;--white:#fff;--muted:#626e74;--line:#e2e7e6;--soft:#edf0ee;--green:#17a768;--radius:19px;--container:1192px;--shadow:0 22px 65px rgba(13,24,32,.11)}
+:root{--ink:#202123;--ink-deep:#161718;--ink-soft:#303135;--red:#ffd600;--red-dark:#ecc300;--paper:#f8f8f4;--white:#fff;--muted:#64686a;--line:#e8e6dc;--soft:#f3f0e7;--green:#17a768;--radius:19px;--container:1192px;--shadow:0 22px 65px rgba(13,24,32,.11)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:120px}
 body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
@@ -274,3 +274,69 @@ a:hover .text-link .icon,.text-link:hover .icon{transform:translateX(4px)}
 /* Slight extra illumination for the technical illustration on dark backgrounds. */
 .hero-visual:before{content:"";position:absolute;inset:12% 1%;border-radius:50%;background:radial-gradient(ellipse at 50% 55%,rgba(115,137,148,.16),transparent 67%);pointer-events:none}
 @media(max-width:650px){.hero-visual>img{transform:translate(0,-44px) scale(1.05);filter:brightness(1.28) drop-shadow(0 20px 24px rgba(0,0,0,.22))}.visual-label.first{top:6px}.visual-label.second{bottom:18px}}
+
+/* V2 - Identidade visual original da Universo das Mangueiras: grafite, branco e amarelo. */
+:focus-visible{outline-color:#f3ca00}
+::selection{background:#ffe47b;color:#181819}
+.topbar{background:#0e0f10;color:#d0d0cd}
+.topbar svg{color:#ffdc00}
+.site-header{background:rgba(26,27,29,.98);border-bottom-color:rgba(255,255,255,.12)}
+.brand{min-width:232px;gap:0;flex:none}
+.brand .logo-uma{width:216px;height:auto;max-height:56px;object-fit:contain;object-position:left center}
+.nav>a,.nav-dropdown>button{color:#f2f1ee}
+.nav>a:hover,.nav-dropdown>button:hover,.nav .active{color:#ffdd18}
+.dropdown-panel{background:#242529;border-color:#47494c}
+.dropdown-panel a{color:#f0eee7}
+.dropdown-panel a:hover{color:#ffe04d;background:#393b3d}
+.menu-toggle{background:#343538;border:1px solid #55585b;color:#fff}
+.btn-red{background:#ffdb05;color:#1a1b1d;box-shadow:0 10px 26px rgba(255,214,0,.15)}
+.btn-red:hover{background:#ffe64a;color:#171819;box-shadow:0 10px 30px rgba(255,214,0,.24)}
+.btn-dark:hover{background:#393b3c}
+.btn-outline:hover{border-color:#d2b100;color:#765c00}
+.btn-ghost:hover{color:#7e5e00}
+.text-link{color:#7c5f00}
+.eyebrow{color:#806300}
+.hero{background:radial-gradient(ellipse at 78% 42%,#383a3b 0,#242526 45%,#151617 88%)}
+.hero:after{background:#ffdb00;opacity:.16}
+.hero .eyebrow{color:#ffe12d}
+.hero h1 .accent{color:#ffdf1d}
+.hero-lead{color:#dadad4}
+.hero-mini{color:#ecebe3}
+.hero-mini svg{color:#ffde20}
+.hero-mini span{background:#aaa99a}
+.hero-visual>img{width:95%;height:465px;max-width:680px;object-fit:cover;object-position:center center;border:3px solid rgba(255,225,54,.13);border-radius:23px;transform:translate(0,8px);filter:drop-shadow(0 32px 26px rgba(0,0,0,.27))}
+.hero-visual:before{background:radial-gradient(ellipse at center,rgba(255,215,19,.12),transparent 68%)}
+.visual-label{background:rgba(22,23,25,.86);border-color:rgba(255,225,87,.2)}
+.visual-label .icon{color:#ffdb05}
+.visual-label small{color:#deddd5}
+.trust-icon{background:#fff6d1;color:#624c00}
+.category-visual,.product-thumb{background:linear-gradient(145deg,#fff,#f2f1e8)}
+.category-visual img{width:90%;height:85%;object-fit:contain;transform:none}
+.category-card:hover .category-visual img{transform:scale(1.04)}
+.product-thumb img{width:80%;height:82%;object-fit:contain}
+.detail-art{background:linear-gradient(145deg,#fff,#f2f1ea)}
+.detail-art img{width:min(80%,460px);height:340px;object-fit:contain}
+.category-visual:after{border-color:rgba(60,60,40,.08)}
+.related-link:hover{border-color:#f0d967;background:#fffbee;color:#725600}
+.related-link svg{color:#8c6b00}
+.approach-board,.about-panel{background:#242526}
+.quote-section{background:#1b1c1e}
+.quote-section:before{background:#ffd500;opacity:.12}
+.quote-step em{color:#1a1b1d;background:#ffdc13}
+.store-top{background:#f7f6f0}
+.cta-strip{background:#ffdb08;color:#212123}
+.cta-strip p{color:#4c462b}
+.cta-strip .btn-white{background:#242526;color:#fff}
+.cta-strip .btn-white:hover{background:#414243}
+.footer{background:#171819;color:#eeeae0}
+.footer-brand p,.footer-links a,.footer-links span{color:#babbb9}
+.footer-bottom{color:#aaa9a5}
+.page-hero{background:radial-gradient(circle at 78% 30%,#404141,#252626 48%,#18191a 91%)}
+.page-hero .eyebrow{color:#ffe151}
+.page-hero p{color:#ecebe7}
+@media(max-width:1100px){.brand{min-width:200px}.brand .logo-uma{width:195px}}
+@media(max-width:920px){.nav{background:#232426;border-top-color:#48494c}.nav>a,.nav-dropdown>button{color:#fff}.dropdown-panel{background:transparent;border:0}.dropdown-panel a{color:#f1f0ed}.brand .logo-uma{width:195px}}
+@media(max-width:650px){.brand .logo-uma{width:166px;max-height:45px}.hero-visual{height:340px;margin-top:18px}.hero-visual>img{width:100%;height:274px;max-width:none;transform:none!important;filter:drop-shadow(0 16px 22px rgba(0,0,0,.23))}.visual-label.first{top:0;right:0}.visual-label.second{bottom:4px;left:0}.detail-art img{height:245px;width:min(80%,350px)}.product-thumb img{width:85%;height:80%}}
+@media(max-width:385px){.brand .logo-uma{width:142px}}
+
+.minicategory:hover{background:#fffae4;border-color:#f1d867;color:#695200}

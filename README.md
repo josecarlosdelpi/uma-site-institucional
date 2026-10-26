@@ -1,6 +1,6 @@
 # Universo das Mangueiras — site institucional
 
-Versão 1.0 de desenvolvimento do site institucional da Universo das Mangueiras Automotivas (UMA), preparada para avaliação e futura publicação na hospedagem Linux da Locaweb.
+Versão 1.1 de desenvolvimento do site institucional da Universo das Mangueiras Automotivas (UMA), preparada para avaliação e futura publicação na hospedagem Linux da Locaweb.
 
 > **Status:** protótipo funcional. Este repositório não publica o site oficial e não está integrado ao Portal UMA.
 
@@ -45,3 +45,12 @@ Site estático com HTML, CSS e JavaScript, sem framework, serviços pagos ou dep
 ## Privacidade do código
 
 Este projeto é material corporativo da UMA. Manter o repositório **privado** até a empresa aprovar uma eventual divulgação do código e dos arquivos.
+
+## Atualização visual — versão 1.1
+
+- Logo oficial branca e amarela, exportada do site institucional atual e armazenada em `assets/img/oficiais/logo-uma.png`.
+- Imagens de produtos e fotografias das unidades importadas para `assets/img/oficiais/` para não depender de URLs da plataforma anterior.
+- Identidade visual em grafite, branco e amarelo.
+- Arquivos originais copiados do site atual em 26/10/2026; validar direitos de uso e atualizar quando necessário.
+
+O workflow `.github/workflows/importar-imagens-uma.yml` foi utilizado para trazer os arquivos, sem solicitar credenciais da hospedagem.
