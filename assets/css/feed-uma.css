@@ -1,0 +1,53 @@
+/* Vitrine social propria UMA: sem widgets externos ou rastreamento de terceiros. */
+.uma-social-section{background:#fff}
+.uma-social-head{align-items:end}
+.uma-social-head .heading-text{max-width:720px}
+.uma-social-profile{border-color:#e6ddc1;gap:10px;white-space:nowrap}
+.uma-social-profile:hover{border-color:#d5ae00;color:#5f4d00}
+.uma-feed-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:18px}
+.uma-feed-status{font-size:12px;font-weight:750;color:#686764;letter-spacing:.025em}
+.uma-feed-arrows{display:flex;gap:9px}
+.uma-feed-arrow{
+ display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;
+ border-radius:12px;border:1px solid #e7e3d9;background:#fff;color:#282a2d;
+ transition:background .2s ease,border-color .2s ease,transform .2s ease
+}
+.uma-feed-arrow:hover:not(:disabled){background:#ffed93;border-color:#efd34a;transform:translateY(-1px)}
+.uma-feed-arrow:disabled{opacity:.38;cursor:not-allowed}
+.uma-feed-track{
+ --uma-feed-gap:17px;
+ display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - (3 * var(--uma-feed-gap))) / 4);
+ gap:var(--uma-feed-gap);overflow-x:auto;overflow-y:hidden;
+ padding:1px 2px 14px;scroll-snap-type:x mandatory;scroll-padding-left:2px;
+ scrollbar-width:thin;scrollbar-color:#d4cfbe transparent;overscroll-behavior-x:contain;
+}
+.uma-feed-card{
+ display:flex;flex-direction:column;min-width:0;scroll-snap-align:start;
+ overflow:hidden;background:#fff;border:1px solid #e9e5da;border-radius:18px;
+ box-shadow:0 10px 26px rgba(20,24,25,.035);
+ transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease
+}
+.uma-feed-card:hover{transform:translateY(-3px);border-color:#e7cf6c;box-shadow:0 18px 36px rgba(20,24,25,.09)}
+.uma-feed-media{
+ display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;
+ width:100%;padding:19px;background:#f7f6f2;overflow:hidden
+}
+.uma-feed-media img{display:block;width:100%;height:100%;object-fit:contain}
+.uma-feed-media.uma-feed-cover{padding:0;background:#dedbd2}
+.uma-feed-media.uma-feed-cover img{object-fit:cover}
+.uma-feed-text{display:flex;flex-direction:column;flex:1;padding:19px 19px 20px}
+.uma-feed-type{font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:850;color:#967500}
+.uma-feed-title{display:block;font-size:17px;line-height:1.25;font-weight:850;letter-spacing:-.03em;margin-top:10px;color:#252628}
+.uma-feed-caption{display:block;font-size:12px;line-height:1.6;color:#666968;margin-top:9px;flex:1}
+.uma-feed-more{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.025em;font-weight:850;color:#806300;margin-top:18px}
+.uma-feed-note{margin:15px 0 0;font-size:12px;color:#75726c;line-height:1.6}
+@media(max-width:1100px){.uma-feed-track{grid-auto-columns:calc((100% - (2 * var(--uma-feed-gap))) / 3)}}
+@media(max-width:760px){.uma-feed-track{grid-auto-columns:calc((100% - var(--uma-feed-gap)) / 2)}.uma-social-head{align-items:start;flex-direction:column}}
+@media(max-width:520px){
+ .uma-feed-track{--uma-feed-gap:13px;grid-auto-columns:min(78vw,285px)}
+ .uma-feed-media{padding:16px}
+ .uma-feed-text{padding:16px}
+ .uma-feed-title{font-size:16px}
+ .uma-feed-toolbar{gap:9px}
+}
+@media(prefers-reduced-motion:reduce){.uma-feed-card,.uma-feed-arrow{transition:none}.uma-feed-track{scroll-behavior:auto}}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "profile": "@universodasmangueiras",
+  "profileUrl": "https://www.instagram.com/universodasmangueiras/",
+  "mode": "curadoria",
+  "description": "Vitrine inicial com fotografias do acervo institucional da UMA; nao ha sincronizacao automatica de posts.",
+  "items": [
+    {
+      "id": "intercooler",
+      "title": "Mangueiras de intercooler",
+      "caption": "Soluções para sistemas de admissão e aplicações turbo.",
+      "image": "assets/img/oficiais/intercooler.jpg",
+      "alt": "Mangueira de intercooler comercializada pela UMA",
+      "url": "mangueiras-intercooler/index.html",
+      "kind": "acervo",
+      "fit": "contain"
+    },
+    {
+      "id": "radiador",
+      "title": "Mangueiras do radiador",
+      "caption": "Peças para o sistema de arrefecimento de veículos leves e pesados.",
+      "image": "assets/img/oficiais/radiador.jpg",
+      "alt": "Mangueira para radiador automotivo do acervo da UMA",
+      "url": "mangueira-radiador/index.html",
+      "kind": "acervo",
+      "fit": "contain"
+    },
+    {
+      "id": "tubo-agua",
+      "title": "Tubos de água",
+      "caption": "Componentes de arrefecimento e condução do líquido de refrigeração.",
+      "image": "assets/img/oficiais/tubo-agua.jpg",
+      "alt": "Tubo de água automotivo do catálogo da UMA",
+      "url": "tubo-de-agua-automotivo/index.html",
+      "kind": "acervo",
+      "fit": "contain"
+    },
+    {
+      "id": "abracadeiras",
+      "title": "Abraçadeiras automotivas",
+      "caption": "Fixação e vedacao de mangueiras e conexões.",
+      "image": "assets/img/oficiais/abracadeiras.jpg",
+      "alt": "Abracadeira automotiva do catálogo da UMA",
+      "url": "abracadeiras-automotivas/index.html",
+      "kind": "acervo",
+      "fit": "contain"
+    },
+    {
+      "id": "joinville",
+      "title": "Nossa unidade de Joinville",
+      "caption": "Conheça a matriz e encontre os canais de atendimento.",
+      "image": "assets/img/oficiais/loja-joinville.webp",
+      "alt": "Fotografia da fachada da UMA em Joinville",
+      "url": "nossas-lojas/index.html",
+      "kind": "acervo",
+      "fit": "cover"
+    },
+    {
+      "id": "tubarao",
+      "title": "Nossa unidade de Tubarão",
+      "caption": "Atendimento próximo, com a variedade que você procura.",
+      "image": "assets/img/oficiais/loja-tubarao.webp",
+      "alt": "Fotografia da fachada da UMA em Tubarão",
+      "url": "nossas-lojas/index.html",
+      "kind": "acervo",
+      "fit": "cover"
+    }
+  ]
+}
