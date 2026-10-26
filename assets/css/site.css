@@ -340,3 +340,104 @@ a:hover .text-link .icon,.text-link:hover .icon{transform:translateX(4px)}
 @media(max-width:385px){.brand .logo-uma{width:142px}}
 
 .minicategory:hover{background:#fffae4;border-color:#f1d867;color:#695200}
+
+
+/* UMA v1.2 - vitrine institucional neutra e imagens sempre contidas nos cards.
+   Todas as fotos originais possuem fundo claro; deixamos a superficie branca
+   para evitar quadros de cores diferentes e bloqueamos qualquer extravasamento. */
+.hero-visual.hero-catalog{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;height:540px;min-height:0;min-width:0;padding:30px 0;
+}
+.hero-visual.hero-catalog::before{
+  content:"";inset:7%;border-radius:34px;
+  background:radial-gradient(ellipse at center,rgba(255,215,19,.12),transparent 70%);
+}
+.hero-catalog-panel{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
+  grid-template-rows:repeat(2,minmax(0,185px));
+  gap:12px;width:min(100%,570px);min-width:0;padding:12px;
+  border:1px solid rgba(255,224,66,.22);border-radius:26px;
+  background:rgba(255,255,255,.055);
+  box-shadow:0 28px 64px rgba(0,0,0,.18);
+}
+.hero-catalog-tile{
+  display:flex;align-items:center;justify-content:center;
+  min-width:0;min-height:0;overflow:hidden;padding:16px;
+  border-radius:17px;background:#fff;
+}
+.hero-catalog-main{grid-row:span 2;padding:25px}
+.hero-catalog-tile>img{
+  display:block;width:100%;height:100%;max-width:100%;max-height:100%;
+  min-width:0;min-height:0;object-fit:contain;
+}
+/* Cards de categoria: imagem e texto nunca compartilham a mesma area. */
+.category-card,.product-card{min-width:0;overflow:hidden}
+.category-visual,.product-thumb,.detail-art{background:#fff!important}
+.category-visual::after,.detail-art::after{display:none}
+.category-visual{
+  display:flex;align-items:center;justify-content:center;
+  flex:0 0 auto;height:215px;padding:22px;min-width:0;min-height:0;
+  overflow:hidden;
+}
+.category-visual>img{
+  display:block;position:relative;z-index:1;
+  width:100%!important;height:100%!important;max-width:100%;max-height:100%;
+  min-width:0;min-height:0;object-fit:contain;transform:none!important;
+}
+.category-card:hover .category-visual>img{transform:scale(1.02)!important}
+.category-info{
+  position:relative;z-index:2;display:flex;flex-direction:column;
+  flex:1;min-width:0;background:#fff;border-top:1px solid #f0ede7;
+}
+.category-info h3,.product-card-body h3{overflow-wrap:break-word}
+.category-info .text-link{margin-top:auto}
+/* Catalogo: o grid anterior permitia que fotos com dimensoes HTML
+   intrinsecas (540x510) invadissem os titulos. Flex + overflow corrigem. */
+.product-card{display:flex;flex-direction:column}
+.product-thumb{
+  display:flex;align-items:center;justify-content:center;
+  flex:0 0 220px;height:220px;min-height:0;min-width:0;
+  padding:22px;overflow:hidden;border-bottom:1px solid #f0ede7;
+}
+.product-thumb>img{
+  display:block;width:100%!important;height:100%!important;
+  max-width:100%;max-height:100%;min-width:0;min-height:0;
+  object-fit:contain;object-position:center;
+}
+.product-card-body{
+  display:flex;flex-direction:column;flex:1;min-width:0;
+  position:relative;z-index:2;background:#fff;
+}
+.product-card-body p{min-height:0;flex:1}
+.product-card-body .text-link{margin-top:auto}
+.detail-art{
+  display:flex;align-items:center;justify-content:center;
+  padding:26px;overflow:hidden;
+}
+.detail-art>img{
+  display:block;width:100%!important;height:auto!important;
+  max-width:500px;max-height:370px;min-width:0;object-fit:contain;
+}
+@media(max-width:920px){
+  .hero-visual.hero-catalog{height:450px;padding:20px 0}
+  .hero-catalog-panel{grid-template-rows:repeat(2,minmax(0,155px))}
+}
+@media(max-width:650px){
+  .hero-visual.hero-catalog{height:auto;margin-top:26px;padding:0 0 38px}
+  .hero-catalog-panel{
+    grid-template-rows:repeat(2,minmax(0,138px));gap:9px;
+    border-radius:20px;padding:9px;
+  }
+  .hero-catalog-tile{padding:12px;border-radius:12px}
+  .hero-catalog-main{padding:17px}
+  .category-visual{height:155px;padding:14px}
+  .product-thumb{height:158px;flex-basis:158px;padding:15px}
+  .detail-art{min-height:285px;padding:18px}
+  .detail-art>img{max-height:260px}
+}
+@media(max-width:385px){
+  .product-thumb{height:208px;flex-basis:208px}
+  .category-visual{height:138px;padding:12px}
+}
