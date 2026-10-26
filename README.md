@@ -73,8 +73,15 @@ O workflow `.github/workflows/importar-imagens-uma.yml` foi utilizado para traze
 
 - Texto da abertura reduzido e imagem de Santa Catarina alinhada ao topo; inclui ajustes próprios para celulares.
 - Nova seção `#avaliacoes` com **notas e quantidades conferidas em 26/10/2026**, sempre separadas por unidade.
-- Joinville: 4,8/5, 153 avaliações. Tubarão: 5,0/5, 65 avaliações. Itajaí: 5,0/5, 50 avaliações.
+- Joinville: 4,9/5, 170 avaliações. Tubarão: 5,0/5, 65 avaliações. Itajaí: 5,0/5, 51 avaliações.
 - Cada cartão contém resumo editorial dos temas recorrentes e link para **o perfil da unidade no Google Maps**. Não são transcrições literais de avaliações individuais.
 - **Sem API, chaves, scripts externos ou assinatura:** as notas são instantâneos e devem ser revisadas manualmente ao atualizar o site. Não afirmar atualização em tempo real.
 - Manutenção: alterar textos, notas, quantidades e a data na seção `id="avaliacoes"` em `index.html`.
 - Links seguem a documentação Google Maps URLs usando `query_place_id` para identificar cada unidade.
+
+## Correção das notas — versão 1.4.1 (26/10/2026)
+
+- Joinville revisada para **4,9/5 (170 avaliações)** a partir de captura do Google Maps encaminhada pela UMA.
+- Itajaí revisada para **5,0/5 (51 avaliações)** da captura correspondente.
+- Tubarão mantida em **5,0/5 (65 avaliações)**, sem alteração nessa revisão.
+- Esses valores são estáticos; para informações atuais os visitantes devem abrir o perfil oficial de cada loja no Google Maps.
