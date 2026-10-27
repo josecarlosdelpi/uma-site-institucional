@@ -581,3 +581,39 @@ a:hover .text-link .icon,.text-link:hover .icon{transform:translateX(4px)}
 .footer-social a:focus-visible{outline:3px solid #ffdb35;outline-offset:2px}
 @media(max-width:650px){.footer-social{gap:12px;margin-top:19px}.footer-social a{width:46px;height:46px}}
 @media(prefers-reduced-motion:reduce){.footer-social a{transition:none}.footer-social a:hover{transform:none}}
+
+
+/* Paginas locais SEO UMA: Joinville, Tubarao e Itajai */
+.store-local-more{display:inline-flex;align-items:center;gap:7px;margin-top:14px;color:#896a00;font-weight:850;font-size:12px}
+.store-local-more:hover{text-decoration:underline;color:#5b4800}
+.store-local-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:62px;align-items:start}
+.store-local-copy h2{margin:17px 0 19px}
+.store-local-copy>p{font-size:16px;color:#5d6264;line-height:1.7}
+.store-local-contact{margin:27px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.store-local-contact>div{border-left:3px solid #ffdd36;padding-left:15px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.store-local-contact strong{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#555}
+.store-local-contact address,.store-local-contact span,.store-local-contact a{font-size:14px;font-style:normal;line-height:1.55;color:#343638;overflow-wrap:anywhere}
+.store-local-contact a:hover{color:#876a00;text-decoration:underline}
+.store-local-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.store-local-tip{font-size:13px!important;color:#6a6862!important;line-height:1.6;max-width:720px;margin:22px 0 0}
+.store-local-media{min-width:0}
+.store-local-photo{margin:0;overflow:hidden;border-radius:17px;border:1px solid #e5e2d9;box-shadow:0 16px 36px rgba(0,0,0,.06);background:#fff}
+.store-local-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.store-local-photo figcaption{font-size:12px;color:#656a6c;padding:14px 18px}
+.store-local-no-photo{min-height:355px;display:flex;flex-direction:column;justify-content:center;padding:35px;border:1px solid #e1d5a4;background:linear-gradient(145deg,#fffbe7,#f5f2e7);border-radius:18px}
+.store-local-no-photo strong{font-size:30px;line-height:1.15;letter-spacing:-.04em;margin:19px 0 12px}
+.store-local-no-photo p{color:#5f5b51;font-size:15px;line-height:1.65}
+.store-local-no-photo .text-link{margin-top:20px}
+.store-local-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
+.store-local-topics a{display:flex;justify-content:space-between;gap:15px;min-height:72px;padding:19px 18px;align-items:center;background:#fff;border-radius:12px;border:1px solid #e7e1ce;color:#252525;font-size:14px;font-weight:750}
+.store-local-topics a:hover{border-color:#e6c629;background:#fffef5;color:#735900}
+.store-local-topics a span{color:#9c7800;font-size:21px}
+.store-local-bottom{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:70px}
+.store-local-other{border:1px solid #e7e3d8;background:#faf9f5;padding:28px;border-radius:16px;align-self:start}
+.store-local-other h3{font-size:22px}
+.store-local-other p{font-size:13px;color:#73736f;margin:0 0 17px}
+.store-local-other a{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #e9e4d9;color:#705800;font-size:13px;font-weight:750}
+.store-local-other a:hover{color:#3a3000}
+@media(max-width:920px){.store-local-grid{grid-template-columns:1fr;gap:30px}.store-local-bottom{grid-template-columns:1fr;gap:30px}.store-local-topics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.store-local-contact{grid-template-columns:1fr 1fr;gap:18px 14px}.store-local-topics{grid-template-columns:1fr}.store-local-cta .btn{width:100%}.store-local-photo img{height:auto}.store-local-no-photo{min-height:260px;padding:26px}.store-local-no-photo strong{font-size:26px}}
+@media(max-width:385px){.store-local-contact{grid-template-columns:1fr}}

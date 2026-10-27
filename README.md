@@ -1,6 +1,6 @@
 # Universo das Mangueiras — site institucional
 
-Versão 1.3 de desenvolvimento do site institucional da Universo das Mangueiras Automotivas (UMA), preparada para avaliação e futura publicação na hospedagem Linux da Locaweb.
+Versão 1.7 de desenvolvimento do site institucional da Universo das Mangueiras Automotivas (UMA), preparada para avaliação e futura publicação na hospedagem Linux da Locaweb.
 
 > **Status:** protótipo funcional. Este repositório não publica o site oficial e não está integrado ao Portal UMA.
 
@@ -92,3 +92,14 @@ O workflow `.github/workflows/importar-imagens-uma.yml` foi utilizado para traze
 - Tres icones em amarelo abaixo da logo: Linktree, Instagram e WhatsApp (abre seletor de unidades existente).
 - Rodape atualizado nas 16 paginas HTML, incluindo a pagina 404. Estilo responsivo no CSS compartilhado.
 - Somente links externos; sem feed do Instagram, aplicativo, API ou servico pago.
+
+## SEO e aprovacoes — versao 1.7 (26/10/2026)
+
+- Site **ainda nao autorizado para migracao**: requer aprovacoes expressas de **Milena e Jardel**.
+- URL preferencial alinhada com o dominio atual sem `www`, com canonical, Open Graph e dados estruturados coerentes.
+- Paginas especificas para Joinville, Tubarao e Itajai com dados de endereco, contato e informacoes locais verificaveis.
+- Sitemap ampliado, breadcrumbs estruturados e dados de Organization/AutoPartsStore revisados.
+- **Regra permanente para toda alteracao futura:** manter SEO consistente e executar `node scripts/auditar-seo.mjs`.
+- Guia obrigatorio de aprovacao, preservacao de URLs e migracao: **[SEO-E-MIGRACAO.md](SEO-E-MIGRACAO.md)**.
+- Regras Apache de exemplo apenas para implantacao futura: `deploy/locaweb.htaccess.exemplo`. NAO aplicar antes das aprovacoes.
+- O dominio, DNS, hospedagem, e-mails, SSL e Portal UMA **nao foram alterados** nesta etapa.
