@@ -85,3 +85,10 @@ O workflow `.github/workflows/importar-imagens-uma.yml` foi utilizado para traze
 - Itajaí revisada para **5,0/5 (51 avaliações)** da captura correspondente.
 - Tubarão mantida em **5,0/5 (65 avaliações)**, sem alteração nessa revisão.
 - Esses valores são estáticos; para informações atuais os visitantes devem abrir o perfil oficial de cada loja no Google Maps.
+
+## Links oficiais no rodape — versão 1.6 (26/10/2026)
+
+- Links verificados no site atual da UMA: `https://linktr.ee/universodasmangueiras` e `https://www.instagram.com/universodasmangueiras/`.
+- Tres icones em amarelo abaixo da logo: Linktree, Instagram e WhatsApp (abre seletor de unidades existente).
+- Rodape atualizado nas 16 paginas HTML, incluindo a pagina 404. Estilo responsivo no CSS compartilhado.
+- Somente links externos; sem feed do Instagram, aplicativo, API ou servico pago.

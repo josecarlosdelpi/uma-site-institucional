@@ -566,3 +566,18 @@ a:hover .text-link .icon,.text-link:hover .icon{transform:translateX(4px)}
   .google-review-rating{gap:12px}
   .google-review-stars{font-size:21px}
 }
+
+
+/* Links oficiais (Linktree, Instagram, WhatsApp) no rodape */
+.footer-social{display:flex;align-items:center;gap:14px;margin-top:21px}
+.footer-social a{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:46px;height:46px;flex:none;border-radius:11px;
+  border:1px solid transparent;color:#ffdb35;
+  transition:color .18s ease,border-color .18s ease,background-color .18s ease,transform .18s ease
+}
+.footer-social a svg{width:29px;height:29px;display:block;flex:none}
+.footer-social a:hover{color:#fff;border-color:rgba(255,220,50,.42);background:rgba(255,220,50,.12);transform:translateY(-2px)}
+.footer-social a:focus-visible{outline:3px solid #ffdb35;outline-offset:2px}
+@media(max-width:650px){.footer-social{gap:12px;margin-top:19px}.footer-social a{width:46px;height:46px}}
+@media(prefers-reduced-motion:reduce){.footer-social a{transition:none}.footer-social a:hover{transform:none}}
