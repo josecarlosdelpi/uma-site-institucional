@@ -21,3 +21,9 @@ As imagens foram copiadas para o repositório para não depender do provedor atu
 Caminho-base original: `https://assets.zyrosite.com/Sc6JoBuPKIKZvy0y/`.
 
 **Observação:** antes da publicação definitiva, a UMA deve confirmar com o prestador os direitos de reutilização de fotos e artes eventualmente licenciadas ou produzidas por terceiros.
+
+## Filial Itajaí — nova imagem (09/11/2026)
+- `loja-itajai.webp`: imagem aprovada pelo responsável da UMA. É uma **versão editada/gerada** a partir de referência visual da fachada, com correção solicitada para que a porta indicada tenha vidro fumê. Não representa um arquivo fotográfico original extraído diretamente do Google Maps.
+- Arquivo WebP otimizado para 1448 × 1086 pixels e 138 KB, armazenado no próprio repositório.
+- A foto é exibida na página da unidade de Itajaí e em cartões das três lojas (Home, Nossas Lojas e Contato); os demais cartões reutilizam as imagens oficiais existentes de Joinville e Tubarão.
+- Não houve alteração de DNS, hospedagem oficial ou perfil do Google Maps.

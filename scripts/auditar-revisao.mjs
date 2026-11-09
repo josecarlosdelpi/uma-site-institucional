@@ -33,6 +33,13 @@ assert(!js.includes('data-quote-form'), 'Javascript do formulario removido reapa
 assert(css.includes('.quote-store-link'), 'Estilo do contato direto ausente');
 assert(css.includes('.footer .footer-links a:visited'), 'Rodape deveria manter links discretos');
 
+const itajaiPhoto = 'assets/img/oficiais/loja-itajai.webp';
+assert(fs.existsSync(itajaiPhoto), 'Foto de Itajaí ausente no repositório');
+assert(read('mangueiras-automotivas-itajai/index.html').includes('../'+itajaiPhoto), 'Página de Itajaí sem a foto aprovada');
+for (const [page,body] of [['home',home],['nossas-lojas',lojas],['contato',contato]]) {
+  assert(body.includes(itajaiPhoto), page+': cartão de Itajaí sem a foto');
+  assert((body.match(/class="store-photo"/g)||[]).length === 3, page+': fotos das três lojas não aparecem juntas');
+}
 const numbers = ['5547991702554','5548988479091','5547996311294'];
 for (const [path, body] of [['index.html',home],['nossas-lojas/index.html',lojas],['contato-distribuidor-mangueiras-automotivas-sc/index.html',contato]]) {
   assert(!body.includes('data-quote-form'), path + ': formulario antigo ainda ativo');

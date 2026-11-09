@@ -115,3 +115,10 @@ O workflow `.github/workflows/importar-imagens-uma.yml` foi utilizado para traze
 - Ajustes de rodapé sem remover canais já aprovados. Os ícones oficiais de Linktree, Instagram e WhatsApp continuam.
 - **Regra de SEO continua obrigatória:** alterar título/meta/URL somente mantendo intenção de busca e consistência de canonical e sitemap; rodar auditorias automatizadas após futuras alterações.
 - **Status de aprovação:** comentários e correções da Milena recebidos para avaliação; isso NÃO é a aprovação expressa da versão final por Milena e Jardel. A migração do domínio oficial segue bloqueada.
+
+## Versão 1.9 — foto da filial de Itajaí (09/11/2026)
+- Adicionada a imagem aprovada de Itajaí em `assets/img/oficiais/loja-itajai.webp` (WebP otimizado, sem serviços externos).
+- Substituído o bloco sem fotografia da página `mangueiras-automotivas-itajai/index.html` pela imagem aprovada.
+- Cartões de lojas da Home, Nossas Lojas e Contato passaram a mostrar as fachadas das três unidades de forma visualmente consistente, utilizando os arquivos já existentes para Joinville e Tubarão.
+- Dados estruturados `AutoPartsStore.image` preparados para Itajaí em todas as páginas, com identidade do domínio oficial preservada no SEO.
+- O domínio oficial continua aguardando autorização final de Milena e Jardel.

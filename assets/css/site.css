@@ -641,3 +641,8 @@ a:hover .text-link .icon,.text-link:hover .icon{transform:translateX(4px)}
 .footer .footer-links a:hover,.footer .footer-links a:focus-visible{color:#fff;text-decoration:underline}
 @media(max-width:650px){.hero-slogan{font-size:15px;margin:-2px 0 15px}.quote-direct{padding:22px}.quote-store-link{padding:12px 11px}.quote-store-meta strong{font-size:15px}.quote-store-meta small{font-size:11px}.approach-board{min-height:315px}}
 @media(prefers-reduced-motion:reduce){.quote-store-link{transition:none}.quote-store-link:hover{transform:none}}
+
+/* Fotos das tres unidades nos cartoes de lojas (versao 1.9) */
+.store-photo{display:block;width:100%;margin:0;aspect-ratio:16/10;overflow:hidden;background:#e9e8e3;border-bottom:1px solid var(--line)}
+.store-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 50%}
+@media(max-width:650px){.store-photo{aspect-ratio:16/9}}
