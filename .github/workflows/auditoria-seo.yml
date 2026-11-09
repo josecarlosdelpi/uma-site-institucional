@@ -20,3 +20,5 @@ jobs:
           node-version: '20'
       - name: Executar auditoria SEO local
         run: node scripts/auditar-seo.mjs
+      - name: Verificar revisao comercial e links
+        run: node scripts/auditar-revisao.mjs

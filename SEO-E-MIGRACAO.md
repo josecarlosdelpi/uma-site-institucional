@@ -75,3 +75,12 @@ Executar `node scripts/auditar-seo.mjs` em toda alteracao de codigo e corrigir a
 - https://search.google.com/search-console/about
 
 **Limite de garantia:** SEO tecnico preparado no codigo nao implica primeiro lugar no Google. A indexacao, performance real, mapeamento historico total e o resultado comercial so podem ser verificados na infraestrutura aprovada, com dados do Search Console.
+
+## Revisão de conteúdo — novembro de 2026
+
+- Feedback da Milena registrado e implementado **apenas no protótipo**, sem caracterizar aprovação final da publicação.
+- Conteúdos, fotos, nomenclatura dos grupos, WhatsApps e links do Google Maps foram revisados para a versão 1.8.
+- O link antigo da página geral `/mangueiras-automotivas-em-santa-catarina/` permanece navegável e indexável, embora seu cartão genérico tenha sido removido da grade de Produtos.
+- As alterações de linguagem comercial não devem quebrar `title`, descrição, URLs canônicas, JSON-LD ou sitemap.
+- Rodar `node scripts/auditar-seo.mjs` e `node scripts/auditar-revisao.mjs` no GitHub Actions sempre que modificar o site.
+- Antes da migração, pedir **aprovação expressa de Milena E Jardel**, mesmo que Milena tenha solicitado ajustes.

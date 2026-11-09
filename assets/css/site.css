@@ -617,3 +617,27 @@ a:hover .text-link .icon,.text-link:hover .icon{transform:translateX(4px)}
 @media(max-width:920px){.store-local-grid{grid-template-columns:1fr;gap:30px}.store-local-bottom{grid-template-columns:1fr;gap:30px}.store-local-topics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.store-local-contact{grid-template-columns:1fr 1fr;gap:18px 14px}.store-local-topics{grid-template-columns:1fr}.store-local-cta .btn{width:100%}.store-local-photo img{height:auto}.store-local-no-photo{min-height:260px;padding:26px}.store-local-no-photo strong{font-size:26px}}
 @media(max-width:385px){.store-local-contact{grid-template-columns:1fr}}
+
+
+/* Revisao comercial aprovada: slogan, atendimento direto, links claros */
+.hero-slogan{color:#ffe04c;font-size:clamp(15px,1.5vw,19px);line-height:1.4;font-weight:850;letter-spacing:.005em;margin:-6px 0 18px}
+.approach-board{min-height:385px}
+.quote-direct{background:#fff;color:#202123;border-radius:18px;padding:32px;box-shadow:0 29px 65px rgba(0,0,0,.13);position:relative}
+.quote-direct .form-title{font-size:23px;font-weight:850;color:#242525;margin:0 0 8px}
+.quote-direct .form-caption{color:#666d6d;font-size:14px;line-height:1.6;margin:0 0 23px}
+.quote-store-list{display:grid;gap:10px}
+.quote-store-link{display:flex;align-items:center;gap:13px;min-height:75px;padding:13px 15px;background:#f7f6f1;color:#242525;border:1px solid #e8e4db;border-radius:12px;transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.quote-store-link:hover{background:#fffbe4;border-color:#e8ca44;transform:translateY(-1px)}
+.quote-store-link:focus-visible{outline:3px solid #e5c02d;outline-offset:3px}
+.quote-store-icon{display:flex;align-items:center;justify-content:center;width:44px;height:44px;flex:none;color:#fff;background:#108e5c;border-radius:12px}
+.quote-store-icon .icon{width:24px;height:24px}
+.quote-store-meta{display:flex;flex-direction:column;min-width:0;gap:3px}
+.quote-store-meta strong{font-size:17px;font-weight:850}
+.quote-store-meta small{font-size:12px;color:#65625b;line-height:1.35}
+.quote-store-arrow{margin-left:auto;color:#856700;display:flex;align-items:center}
+.quote-store-arrow .icon{width:18px;height:18px}
+.quote-direct-note{font-size:12px;line-height:1.6;color:#636460;margin:19px 0 0}
+.footer .footer-links a,.footer .footer-links a:visited{color:#c6c4c0}
+.footer .footer-links a:hover,.footer .footer-links a:focus-visible{color:#fff;text-decoration:underline}
+@media(max-width:650px){.hero-slogan{font-size:15px;margin:-2px 0 15px}.quote-direct{padding:22px}.quote-store-link{padding:12px 11px}.quote-store-meta strong{font-size:15px}.quote-store-meta small{font-size:11px}.approach-board{min-height:315px}}
+@media(prefers-reduced-motion:reduce){.quote-store-link{transition:none}.quote-store-link:hover{transform:none}}

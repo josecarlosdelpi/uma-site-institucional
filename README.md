@@ -1,6 +1,6 @@
 # Universo das Mangueiras — site institucional
 
-Versão 1.7 de desenvolvimento do site institucional da Universo das Mangueiras Automotivas (UMA), preparada para avaliação e futura publicação na hospedagem Linux da Locaweb.
+Versão 1.8 de desenvolvimento do site institucional da Universo das Mangueiras Automotivas (UMA), preparada para avaliação e futura publicação na hospedagem Linux da Locaweb.
 
 > **Status:** protótipo funcional. Este repositório não publica o site oficial e não está integrado ao Portal UMA.
 
@@ -103,3 +103,15 @@ O workflow `.github/workflows/importar-imagens-uma.yml` foi utilizado para traze
 - Guia obrigatorio de aprovacao, preservacao de URLs e migracao: **[SEO-E-MIGRACAO.md](SEO-E-MIGRACAO.md)**.
 - Regras Apache de exemplo apenas para implantacao futura: `deploy/locaweb.htaccess.exemplo`. NAO aplicar antes das aprovacoes.
 - O dominio, DNS, hospedagem, e-mails, SSL e Portal UMA **nao foram alterados** nesta etapa.
+
+## Revisão comercial — versão 1.8 (09/11/2026)
+
+- Revisão aplicada a partir do retorno de Milena registrado no documento interno **SITE UNIVERSO-JUNIOR.docx** (8 páginas), com confirmação das duas escolhas interpretativas pelo responsável pelo projeto.
+- Abertura: slogan oficial "Solução e agilidade que você precisa!"; remover "anunciados"; texto sobre grupos e linhas leve, média e pesada; foto de mangueira de borracha no destaque do portfólio.
+- Grupos: "Conhecer grupo" e destaque para ônibus na linha pesada; remover a escrita decorativa grande "UMA"; retirar o cartão genérico de mangueiras automotivas do catálogo principal sem apagar sua URL SEO histórica.
+- Orçamento: remover formulários antigos das páginas Inicial, Nossas lojas e Contato; exibir três links **diretos e independentes** para os WhatsApps das lojas, com indicação clara de cada unidade.
+- Comunicação: substituir a sigla UMA em textos públicos por "Universo das Mangueiras", "Universo" ou expressões naturais como "Quem somos" e "Falar com a equipe"; **preservar a logomarca oficial e identificadores técnicos**.
+- Google Maps: links específicos por unidade usando Places IDs no formato documentado pelo Google, em avaliações, cartões de lojas, páginas locais e dados estruturados. Se a Meta/Google alterar IDs, atualizar as referências após nova verificação.
+- Ajustes de rodapé sem remover canais já aprovados. Os ícones oficiais de Linktree, Instagram e WhatsApp continuam.
+- **Regra de SEO continua obrigatória:** alterar título/meta/URL somente mantendo intenção de busca e consistência de canonical e sitemap; rodar auditorias automatizadas após futuras alterações.
+- **Status de aprovação:** comentários e correções da Milena recebidos para avaliação; isso NÃO é a aprovação expressa da versão final por Milena e Jardel. A migração do domínio oficial segue bloqueada.
